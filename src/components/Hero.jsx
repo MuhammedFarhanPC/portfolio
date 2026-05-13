@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { socialLinks } from "../constants";
+import { Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -60,11 +61,13 @@ const Hero = () => {
               View Projects
             </motion.a>
             <motion.a
-              href="#"
+              href="/resume.pdf"
+              download="Muhammed_Farhan_PC_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="btn-outline text-white"
+              className="group flex items-center gap-2 px-8 py-3 rounded-full font-semibold border border-neon-blue/50 text-white hover:text-neon-blue hover:bg-neon-blue/10 hover:shadow-[0_0_20px_rgba(0,240,255,0.3)] transition-all duration-300 bg-black/30 backdrop-blur-md"
             >
+              <Download size={20} className="group-hover:-translate-y-1 transition-transform duration-300" />
               Download Resume
             </motion.a>
             <motion.a
